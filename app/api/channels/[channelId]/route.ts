@@ -113,3 +113,5 @@ export async function PATCH(
     return new NextResponse("Internal Error", { status: 500 });
   }
 }
+
+export const dynamic = "force-dynamic";
