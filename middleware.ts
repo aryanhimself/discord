@@ -9,4 +9,5 @@ export default authMiddleware({
 
 export const config = {
   matcher: ["/((?!.*\\..*|_next).*)", "/", "/(api|trpc)(.*)", "/api/socket/io"],
+  ignoredRoutes: ["/((?!api|trpc))(_next|.+..+)(.*)", "/api/socket/io"],
 };
